@@ -5,3 +5,4 @@ a.out
 *.bak
 *.bak2
 main.c
+*_test.c
