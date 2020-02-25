@@ -1,0 +1,7 @@
+a.out
+*.swp
+*.old
+*.old2
+*.bak
+*.bak2
+main.c
