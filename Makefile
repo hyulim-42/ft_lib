@@ -2,7 +2,8 @@
 
 NAME		= libft.a
 
-FILENAME	= ft_memset.c
+FILENAME	= ft_memset.c \
+			  ft_bzero.c
 
 OBJS 		= $(FILENAME:.c=.o)
 

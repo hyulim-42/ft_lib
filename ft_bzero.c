@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hyulim <hyulim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/25 20:00:46 by hyulim            #+#    #+#             */
-/*   Updated: 2020/02/25 20:59:41 by hyulim           ###   ########.fr       */
+/*   Created: 2020/02/25 20:11:46 by hyulim            #+#    #+#             */
+/*   Updated: 2020/02/25 21:01:18 by hyulim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include "libft.h"
 
-void		*ft_memset(void *b, int c, size_t len);
-void		ft_bzero(void *s, size_t n);
-#endif
+void		ft_bzero(void *s, size_t n)
+{
+	unsigned	char	*dst;
+
+	if (n > 0)
+	{
+		dst = (unsigned char*)s;
+		while (n-- > 0)
+			*dst++ = 0;
+	}
+}
